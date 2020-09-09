@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class EchoController {
     //Remember to provide parameters to calculate
     //Otherwise a white-label error will occur
-    @GetMapping("/")
+    @GetMapping("/echo")
     @ResponseBody
-    public String calc(@RequestParam String stringFromParameter) {
+    public String echo(@RequestParam String stringFromParameter) {
         return stringFromParameter;
     }
 }
