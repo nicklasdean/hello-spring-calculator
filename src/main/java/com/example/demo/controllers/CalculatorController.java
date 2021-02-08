@@ -9,6 +9,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class CalculatorController {
     //Remember to provide parameters to calculate
+    //A parameter is provided by localhost:8080?[name of RequestParam]=[Parameter]
+    //E.g: localhost:8080?intFromUrl=5
+    //Should yield the reuslt 10
+
     //Otherwise a white-label error will occur
     @GetMapping("/calc")
     @ResponseBody
